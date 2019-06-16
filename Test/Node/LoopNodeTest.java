@@ -8,12 +8,12 @@ package Node;
  *
  * @author cmc
  */
-public class loopNodeTest {
+public class LoopNodeTest {
     public static void main(String[] args) {
-        loopNode n1 = new loopNode(1);
-        loopNode n2 = new loopNode(2);
-        loopNode n3 = new loopNode(3);
-        loopNode n4 = new loopNode(4);
+        LoopNode n1 = new LoopNode(1);
+        LoopNode n2 = new LoopNode(2);
+        LoopNode n3 = new LoopNode(3);
+        LoopNode n4 = new LoopNode(4);
 //        n1.after(n2);
 //        System.out.println(n1.next().getData());
 //        System.out.println(n2.next().getData());

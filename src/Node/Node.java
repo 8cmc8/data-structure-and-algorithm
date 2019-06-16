@@ -2,7 +2,7 @@ package Node;
 
 /**
  * ClassName: Node
- * Description:
+ * Description: 单链表
  * date: 2019-06-16 10:59
  *
  * @author cmc
