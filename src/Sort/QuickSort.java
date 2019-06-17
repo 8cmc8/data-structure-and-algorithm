@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 /**
  * ClassName: QuickSort
- * Description:
+ * Description: 快速排序
  * date: 2019-06-17 10:11
  *
  * @author cmc
