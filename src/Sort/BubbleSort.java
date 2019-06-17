@@ -1,5 +1,7 @@
 package Sort;
 
+import java.util.Arrays;
+
 /**
  * ClassName: BubbleSort
  * Description: 冒泡排序
@@ -9,15 +11,10 @@ package Sort;
  */
 public class BubbleSort {
     public static void main(String[] args) {
-        int[] arr = new int[]{7,6,4,3,2,1,5,8,3};
-        for (int i = 0; i < arr.length; i++) {
-            System.out.print(arr[i]);
-        }
-        System.out.println();
+        int[] arr = new int[] {7,6,4,3,2,1,5,8,3};
+        System.out.println(Arrays.toString(arr));
         bubbleSort(arr);
-        for (int i = 0; i < arr.length; i++) {
-            System.out.print(arr[i]);
-        }
+        System.out.println(Arrays.toString(arr));
     }
     public static void bubbleSort(int[] arr) {
         for (int i = 0; i < arr.length - 1; i++) {
