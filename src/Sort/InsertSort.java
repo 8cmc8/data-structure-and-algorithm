@@ -19,17 +19,15 @@ public class InsertSort {
     public static void insertSort(int[] arr) {
         //从数组的第二个数开始遍历所有数
         for (int i = 1; i < arr.length; i++) {
-            //如果当前数字比前一个数小
-            if (arr[i] < arr[i-1]) {
-                //将当前数字存在临时变量中
-                int temp = arr[i];
-                int j;
-                for (j = i-1; j >= 0 && arr[j] > temp; j--) {
-                    //把前一个数字赋给后一个数字
-                    arr[j+1] = arr[j];
+            //将要比较的数赋值给临时变量
+            int temp = arr[i];
+            //依次和有序数做比较
+            for (int j = i; j > 0; j--) {
+                //小于前一个数，则交换位置
+                if (arr[j] < arr[j-1]) {
+                    arr[j] = arr[j-1];
+                    arr[j-1] = temp;
                 }
-                //把临时变量赋给不满足循环条件的后一个元素
-                arr[j+1] = temp;
             }
         }
     }
